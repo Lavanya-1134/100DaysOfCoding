@@ -1,16 +1,42 @@
-print("=== ResQHub Rescue Animal List ===")
+#Exercise 1 — String
+name = "Lavanya Poojari"
+print(name[0:7])
+print(name[8:17])
+print(name.upper())
+print(name.lower())
+print(len(name))
 
-num_reports = int(input("How many animals do you want to report? "))
+#Exercise 2 — String cleaning
+email = "   LAVANYA@GMAIL.COM   "
+print(email.strip().lower())
 
-animals = []
+#Exercise 3 — List
+languages = ["Python", "Java", "HTML", "CSS", "JavaScript"]
+print(languages[0:5])
+print(languages[4])
+languages.append("C++")
+languages.remove("Java")
+languages.insert(2, "C#")
+print(languages)
+print(len(languages))
 
-for i in range(1, num_reports + 1):
-    animal_name = input(f"Enter animal {i} name: ")
-    animals.append(animal_name)
+#Exercise 4 — Important ⭐
+marks = [78, 92, 65, 88, 95]
+print(max(marks))
+print(min(marks))
+print(sum(marks))
+print(len(marks))
+print(sum(marks)/len(marks))
 
-print("\n=== Rescue Reports ===")
+#Day 5 Mini Challenge
+print("Student Report")
+print(input("Enter your name: "))
+print(int(input("Enter your age: ")))
+print(input("Enter your college: "))
+print(input("Enter your Branch: "))
 
-for i in range(len(animals)):
-    print(f"{i + 1}. {animals[i]}")
+Skills = ["Python", "Machine Learning", "Git"]
+print("The Skills You will Learn: ", Skills[0:3])
 
-print(f"\nTotal Animals Reported: {len(animals)}")
+
+
